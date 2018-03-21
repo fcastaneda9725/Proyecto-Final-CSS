@@ -1,0 +1,12 @@
+#body{
+	font-family: Open Sans;
+}
+#header {
+	background-color: #5b7989;
+	display: flex;
+	width: 100%
+}
+
+#header .titulo{
+	text-shadow: 2px 2px #02010a;
+}
