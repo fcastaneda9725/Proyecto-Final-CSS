@@ -1,12 +1,48 @@
-#body{
-	font-family: Open Sans;
+body{
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
 }
 #header {
 	background-color: #5b7989;
 	display: flex;
 	width: 100%
+	position:fixed;
+	top: 0;
 }
 
 #header .titulo{
 	text-shadow: 2px 2px #02010a;
+	padding: 15px;
+}
+
+#header .menu{
+
+}
+
+ul{
+	list-style: none;
+	overflow: hidden;
+}
+
+li{
+	float: right;
+	display: block;
+	padding: 15px;
+}
+.contenido {
+	max-width: 900px;
+	height: 100px;
+	background-color: red;
+	margin: auto;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media only (min-width: 420px) {
+	.contenido{
+		width: 100px;
+	}	
 }
