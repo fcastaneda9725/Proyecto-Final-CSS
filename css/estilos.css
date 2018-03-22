@@ -49,6 +49,10 @@ body{
     text-decoration: none;
 }
 
+a:-webkit-any-link {
+    color: white;
+}
+
 ul{
 	list-style: none;
 	overflow: hidden;
