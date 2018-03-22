@@ -1,22 +1,52 @@
+/*Hoja de Estilos para Proyecto Final CSS para Certificación en Next U version 1.0*/
+
+
+/*----------------------------------*/
+/* Inicio Estilos generales*/
+/*----------------------------------*/
+
 body{
 	font-family: 'Dancing Script', cursive;
 	background-color: #02010a;
 }
+
+/*----------------------------------*/
+/* Inicio Estilos generales*/
+/*----------------------------------*/
+
+/*----------------------------------*/
+/* Inicio Estilos de menú*/
+/*----------------------------------*/
+
 #header {
 	background-color: #5b7989;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	position:fixed;
 	top: 0;
+	left: 0;
+	border-radius: 10px 10px 0px 0px;
 }
 
 #header .titulo{
 	text-shadow: 2px 2px #02010a;
 	padding: 15px;
+	color: white;
+	flex-grow: 8;
 }
 
 #header .menu{
-	flex-grow: 1;
+	color: white;
+	font-size: 20px;
+}
+
+#header .menu a:visited, a:hover{
+	color: white;
+}
+
+#header .menu a.selected {
+    text-decoration: none;
 }
 
 ul{
@@ -25,10 +55,20 @@ ul{
 }
 
 li{
-	float: right;
+	float: left;
 	display: block;
 	padding: 15px;
 }
+
+/*----------------------------------*/
+/* Fin Estilos de menú*/
+/*----------------------------------*/
+
+
+/*----------------------------------*/
+/* Inicio Estilos de contenido*/
+/*----------------------------------*/
+
 .contenido {
 	max-width: 900px;
 	height: 100px;
@@ -37,13 +77,44 @@ li{
 	margin-top: 80px;
 }
 
+/*----------------------------------*/
+/* Fin Estilos de contenido*/
+/*----------------------------------*/
+
+/*----------------------------------*/
+/* Inicio Estilos de Footer*/
+/*----------------------------------*/
+
 footer{
 	position: fixed;
 	bottom: 0;
 }
 
-@media only (min-width: 420px) {
+/*----------------------------------*/
+/* Fin Estilos de Footer*/
+/*----------------------------------*/
+
+
+/*----------------------------------*/
+/* Inicio Estilos de Responsivos*/
+/* Omitire comentar ya que los nombres son muy obvios y están previamente
+especificados en los estilos de arriba */
+/*----------------------------------*/
+
+@media only screen and (max-width: 425px) {
 	.contenido{
-		width: 100px;
-	}	
+		width: 100%;
+		margin-top: 160px;
+	}
+
+	#header .menu, #header .titulo {
+		flex-grow: 0;
+		margin: auto;
+	}
+
 }
+
+
+/*----------------------------------*/
+/* Fin Estilos de contenido*/
+/*----------------------------------*/
