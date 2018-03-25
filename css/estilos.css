@@ -11,6 +11,11 @@ body{
 	margin: 0;
 }
 
+.contenido img {
+	-webkit-box-shadow: 2px 2px 0px 0px #02010a;
+	-moz-box-shadow: 2px 2px 0px 0px #02010a;
+	box-shadow: 2px 2px 0px 0px #02010a;
+}
 /*----------------------------------*/
 /* Inicio Estilos generales*/
 /*----------------------------------*/
@@ -109,6 +114,15 @@ li{
 /*----------------------------------*/
 
 /*----------------------------------*/
+/* Inicio de Animaciones*/
+/*----------------------------------*/
+
+/*----------------------------------*/
+/* Fin de Animaciones*/
+/*----------------------------------*/
+
+
+/*----------------------------------*/
 /* Inicio Estilos de Footer*/
 /*----------------------------------*/
 
@@ -138,7 +152,7 @@ footer > div {
     flex-basis: 100%;
 }
 
-.acomodo-iconos a {
+.acomodo-iconos a, .acomodo-iconos a:visited{
 	color: black;
 }
 
