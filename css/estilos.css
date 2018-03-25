@@ -82,21 +82,27 @@ li{
 }
 #imagen-principal {
 	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .imagenes-secundarias{
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 	background-color: #d5c75f;
 }
 
 .imagen-uno, .imagen-dos {
 	width: 50%;
 	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }
 
 .imagen-uno > img, .imagen-dos > img {
-	width: 50%;
+	width: 80%;
 }
 /*----------------------------------*/
 /* Fin Estilos de contenido*/
@@ -109,6 +115,8 @@ li{
 footer{
 	position: fixed;
 	bottom: 0;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
 }
 
 /*----------------------------------*/
@@ -125,12 +133,15 @@ especificados en los estilos de arriba */
 @media only screen and (max-width: 425px) {
 	.contenido{
 		width: 100%;
-		margin-top: 160px;
 	}
 
 	#header .menu, #header .titulo {
 		flex-grow: 0;
 		margin: auto;
+	}
+
+	.imagen-uno, .imagen-dos {
+		width: 100%
 	}
 
 }
