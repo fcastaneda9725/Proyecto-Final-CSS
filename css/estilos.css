@@ -16,6 +16,10 @@ body{
 	-moz-box-shadow: 2px 2px 0px 0px #02010a;
 	box-shadow: 2px 2px 0px 0px #02010a;
 }
+
+a:-webkit-any-link {
+    color: black;
+}
 /*----------------------------------*/
 /* Inicio Estilos generales*/
 /*----------------------------------*/
@@ -30,6 +34,7 @@ body{
 	flex-wrap: wrap;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
+	animation: slidein 3s;
 }
 
 #header .titulo{
@@ -44,16 +49,12 @@ body{
 	font-size: 20px;
 }
 
-#header .menu a:visited, a:hover{
+#header .menu a:visited,#header .menu a:hover, #header .menu a {
 	color: white;
 }
 
 #header .menu a.selected {
     text-decoration: none;
-}
-
-a:-webkit-any-link {
-    color: white;
 }
 
 ul{
@@ -106,8 +107,24 @@ li{
 
 }
 
-.imagen-uno > img, .imagen-dos > img {
+.imagen-uno a img, .imagen-dos a img {
 	width: 80%;
+}
+
+.imagen-uno img:hover {
+	transform: rotate(10deg);
+	transition-duration: 2s;
+	-webkit-box-shadow: 2px 2px 0px 0px  #82c3a6;
+	-moz-box-shadow: 2px 2px 0px 0px  #82c3a6;
+	box-shadow: 2px 2px 0px 0px  #82c3a6
+}
+
+.imagen-dos img:hover {
+	transform: translate(20px, -5px);
+	transition-duration: 2s;
+	-webkit-box-shadow: 2px 2px 0px 0px  #82c3a6;
+	-moz-box-shadow: 2px 2px 0px 0px  #82c3a6;
+	box-shadow: 2px 2px 0px 0px  #82c3a6
 }
 /*----------------------------------*/
 /* Fin Estilos de contenido*/
@@ -116,7 +133,18 @@ li{
 /*----------------------------------*/
 /* Inicio de Animaciones*/
 /*----------------------------------*/
+ @-webkit-keyframes slidein{
+ 	0% {
+ 		margin-top: 150%;
+ 	}
 
+ 	60% {
+ 		margin-top:-5%;
+ 	}
+ 	100% {
+ 		margin-top: 0;
+ 	}
+ }
 /*----------------------------------*/
 /* Fin de Animaciones*/
 /*----------------------------------*/
