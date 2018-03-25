@@ -113,12 +113,19 @@ li{
 /*----------------------------------*/
 
 footer{
-	position: fixed;
-	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	border-radius: 0px 0px 10px 10px;
 	background-color: #C6d5c5;
 }
+footer > div {
+	flex-basis: 25%;
+}
 
+.texto {
+	padding-left: 5%;
+}
 /*----------------------------------*/
 /* Fin Estilos de Footer*/
 /*----------------------------------*/
@@ -142,6 +149,13 @@ especificados en los estilos de arriba */
 
 	.imagen-uno, .imagen-dos {
 		width: 100%
+	}
+
+	footer > div {
+		padding: 5%;
+		flex-basis: 100%;
+		text-align: left;
+	
 	}
 
 }
