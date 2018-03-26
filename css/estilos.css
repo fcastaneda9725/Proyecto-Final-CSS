@@ -11,7 +11,7 @@ body{
 	margin: 0;
 }
 
-.contenido img {
+.contenido img, .contenido-dos img {
 	-webkit-box-shadow: 2px 2px 0px 0px #02010a;
 	-moz-box-shadow: 2px 2px 0px 0px #02010a;
 	box-shadow: 2px 2px 0px 0px #02010a;
