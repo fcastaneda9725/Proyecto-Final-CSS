@@ -74,7 +74,7 @@ li{
 
 
 /*----------------------------------*/
-/* Inicio Estilos de contenido*/
+/* Inicio Estilos de contenido HOME*/
 /*----------------------------------*/
 
 .contenido {
@@ -127,7 +127,56 @@ li{
 	box-shadow: 2px 2px 0px 0px  #82c3a6
 }
 /*----------------------------------*/
-/* Fin Estilos de contenido*/
+/* Fin Estilos de contenido HOME*/
+/*----------------------------------*/
+
+/*----------------------------------*/
+/* Inicio Estilos de contenido RETRATOS*/
+/*----------------------------------*/
+.contenido-dos {
+	max-width: 900px;
+	margin: auto;
+	background-color: #d5c75f;
+}
+
+.contenido-dos h1 {
+	text-align: center;
+	padding-top: 20;
+    margin: 0;
+}
+
+.fila {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around
+}
+
+div[class|="img"]{
+	flex-basis: 30%
+}
+
+div[class|="img"] img{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-uno {
+	-webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.img-dos, .img-cuatro, .img-seis {
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+.img-tres {
+	-webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+/*----------------------------------*/
+/* Fin Estilos de contenido RETRATOS*/
 /*----------------------------------*/
 
 /*----------------------------------*/
@@ -170,8 +219,8 @@ footer > div {
 }
 
 #redes-sociales img {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 }
 
 .acomodo-iconos {
@@ -214,6 +263,10 @@ especificados en los estilos de arriba */
 		flex-basis: 100%;
 		text-align: left;
 	
+	}
+
+	div[class|="img"] {
+    flex-basis: 80%;
 	}
 
 }
